@@ -24,9 +24,9 @@ const COLORS = {
 };
 
 const tabs = [
-  { key: 'life', label: 'Life', icon: '📖' },
   { key: 'career', label: 'Career', icon: '💼' },
   { key: 'assets', label: 'Assets', icon: '🔑' },
+  { key: 'life', label: 'Life', icon: '📖' },
   { key: 'people', label: 'People', icon: '👥' },
   { key: 'activities', label: 'Activities', icon: '⚡' },
 ];
