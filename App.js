@@ -34,6 +34,14 @@ export default function App() {
           <Text style={styles.buttonText}>Test the app</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity
+          activeOpacity={0.8}
+          style={styles.resetButton}
+          onPress={() => setCount(0)}
+        >
+          <Text style={styles.resetButtonText}>Reset counter</Text>
+        </TouchableOpacity>
+
         <Text style={styles.note}>
           Next, tell me what to change and we will watch the app update.
         </Text>
@@ -101,6 +109,19 @@ const styles = StyleSheet.create({
     color: '#081020',
     fontSize: 17,
     fontWeight: '800',
+  },
+  resetButton: {
+    alignItems: 'center',
+    borderColor: '#6E8EFF',
+    borderRadius: 16,
+    borderWidth: 1,
+    marginTop: 12,
+    paddingVertical: 15,
+  },
+  resetButtonText: {
+    color: '#AFC0FF',
+    fontSize: 16,
+    fontWeight: '700',
   },
   note: {
     color: '#7E8AA8',
